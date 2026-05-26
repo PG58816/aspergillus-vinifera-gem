@@ -1,0 +1,28 @@
+# Requirements for:
+# Metabolic Modelling of Aspergillus niger and Grapevine Pathogenic Interactions
+# Maia, Joana (PG58816) — Universidade do Minho, 2025
+#
+# Exact versions tested and confirmed in all notebooks.
+# Install with: pip install -r requirements.txt
+#
+# NOTE: Gurobi requires a separate academic licence.
+# Free academic licence: https://www.gurobi.com/academia/academic-program-and-licenses/
+# Without Gurobi, COBRApy falls back to GLPK (slower; may affect results for large models).
+
+# Core modelling
+cobra==0.31.1
+gurobipy==13.0.2      # requires Gurobi licence — see note above
+memote>=0.13          # exact version not pinned; any 0.13.x is compatible
+
+# Data handling
+pandas==2.3.3
+numpy==2.4.4
+
+# Visualisation
+matplotlib==3.10.8
+seaborn==0.13.2
+
+# Jupyter
+jupyter>=1.0
+jupyterlab>=4.0
+ipywidgets>=8.0       # required for Jupyter widget support
